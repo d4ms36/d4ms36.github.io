@@ -37,6 +37,7 @@ body {
         linear-gradient(180deg, #090c10 0%, #0d1117 100%);
     color: var(--text-main);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 body.light-mode {
@@ -56,10 +57,16 @@ a {
     font: inherit;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 .page-shell {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 26px 24px 0;
+    padding: 18px 20px 0;
 }
 
 .topbar {
@@ -67,9 +74,9 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 22px;
-    padding: 18px 26px;
+    padding: 16px 24px;
     border: 1px solid var(--line);
-    border-radius: 22px;
+    border-radius: 18px;
     background: rgba(18, 24, 33, 0.72);
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-soft);
@@ -124,6 +131,7 @@ body.light-mode .brand {
     align-items: center;
     justify-content: center;
     gap: 28px;
+    white-space: nowrap;
 }
 
 .main-nav a {
@@ -132,6 +140,7 @@ body.light-mode .brand {
     font-size: 0.95rem;
     font-weight: 500;
     transition: color 0.2s ease;
+    white-space: nowrap;
 }
 
 .main-nav a:hover {
@@ -226,11 +235,11 @@ body.light-mode .toggle-thumb {
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 1.08fr 0.92fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 42px;
-    padding-top: 22px;
+    padding-top: 12px;
 }
 
 .hero-copy {
@@ -263,7 +272,7 @@ body.light-mode .toggle-thumb {
     font-size: clamp(2.7rem, 5vw, 5rem);
     font-weight: 800;
     letter-spacing: -0.06em;
-    line-height: 0.96;
+    line-height: 0.92;
     background: linear-gradient(90deg, #f2cd7b 0%, #d9b76b 18%, #bfe6c8 58%, #9ae6b4 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -293,6 +302,7 @@ body.light-mode .toggle-thumb {
     box-shadow: 0 18px 30px rgba(124, 58, 237, 0.34);
     min-width: 220px;
     padding-block: 1.05rem;
+    font-size: 1.04rem;
 }
 
 .btn-secondary {
@@ -630,7 +640,8 @@ body.light-mode .toggle-thumb {
     }
 
     .hero {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .hero-copy {
