@@ -41,6 +41,4 @@
 
 ### 📦 Instalación y Configuración
 
-1. Clona el repositorio:
-   ```bash
-   git clone [https://github.com/TU_USUARIO/DollarTodo.git](https://github.com/TU_USUARIO/DollarTodo.git)
+1. Playstore
