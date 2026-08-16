@@ -1,44 +1,46 @@
-# Hola mundo, soy [Tu Nombre] 👋
+# 💵 DollarTodo
 
-> Desarrollador enfocado en crear soluciones eficientes, arquitectura limpia y proyectos de alto impacto.
-
----
-
-### 🛠️ Stack Tecnológico
-
-**Lenguajes & Frameworks**
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-**Herramientas & Entornos**
-![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
----
-
-### 📊 Mis Estadísticas en GitHub
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TU_USUARIO&show_icons=true&theme=radical&hide_border=true" height="160" alt="Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO&layout=compact&theme=radical&hide_border=true" height="160" alt="Top Languages" />
-</div>
+> Control financiero personal, ágil y adaptado al registro en multimoneda.
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=TU_USUARIO&theme=radical&hide_border=true" alt="Streak" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
+  <img src="https://img.shields.io/badge/Status-In%20Development-blue?style=for-the-badge" alt="Status" />
 </p>
 
 ---
 
-### 🚀 Proyectos Destacados
+### 📱 Vista Previa
 
-* **[Nombre del Proyecto 1](enlace-al-repo)** — Breve descripción de 1 línea sobre qué resuelve o qué tecnología usa.
-* **[Nombre del Proyecto 2](enlace-al-repo)** — Breve descripción del objetivo o funcionalidad clave.
+<div align="center">
+  <img src="screenshots/screen1.png" width="220" alt="Pantalla Principal" />
+  <img src="screenshots/screen2.png" width="220" alt="Detalle de Gastos" />
+  <img src="screenshots/screen3.png" width="220" alt="Conversión / Estadísticas" />
+</div>
 
 ---
 
-### 📬 Conecta conmigo
+### 🚀 Características Clave
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/TU_PERFIL)
-[![Correo](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tu-correo@gmail.com)
+* **Registro Rápido de Gastos e Ingresos:** Interfaz limpia para añadir transacciones en segundos.
+* **Manejo Multimoneda:** Conversión y seguimiento ágil entre divisas (USD / Moneda Local).
+* **Organización por Categorías:** Clasificación visual de gastos para un control detallado del presupuesto.
+* **Historial y Balances:** Visualización directa del balance total y desglose por periodos.
+
+---
+
+### 🛠️ Stack Tecnológico & Arquitectura
+
+* **Lenguaje:** Kotlin
+* **Plataforma:** Android SDK
+* **IDE:** Android Studio
+* **Arquitectura:** MVVM (Model-View-ViewModel) / Clean Architecture
+* **UI:** Jetpack Compose / Material Components
+
+---
+
+### 📦 Instalación y Configuración
+
+1. Clona el repositorio:
+   ```bash
+   git clone [https://github.com/TU_USUARIO/DollarTodo.git](https://github.com/TU_USUARIO/DollarTodo.git)
