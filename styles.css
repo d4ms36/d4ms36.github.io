@@ -95,15 +95,16 @@ body.dark-mode .topbar {
 
 .brand-logo,
 .app-logo {
-    width: 46px;
-    height: 46px;
+    width: 62px;
+    height: 62px;
     object-fit: contain;
     display: block;
-    border-radius: 16px;
+    border-radius: 18px;
     background: transparent;
     padding: 0;
     border: none;
     box-shadow: none;
+    filter: drop-shadow(0 12px 22px rgba(32, 26, 13, 0.18));
 }
 
 .brand-text {
