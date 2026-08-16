@@ -8,29 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="dolartodo ico.png">
-    <link rel="shortcut icon" type="image/png" href="dolartodo ico.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./dolartodo%20ico.png">
+    <link rel="shortcut icon" type="image/png" href="./dolartodo%20ico.png">
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-    <header class="topbar">
-        <a href="index.html" class="brand" aria-label="Dolar To-Do inicio">
-            <img src="dolartodo ico.png" alt="Dolar To-Do" class="brand-logo">
-            <span class="brand-text">Dolar To-Do</span>
-        </a>
+<body class="dark-mode">
+    <header class="topbar container">
+        <div class="brand-wrap">
+            <a href="./index.html" class="brand" aria-label="Dolar To-Do inicio">
+                <img src="./dolartodo%20ico.png" alt="Dolar To-Do" class="brand-logo">
+                <span class="brand-text">Dolar To-Do</span>
+            </a>
+        </div>
 
         <nav class="main-nav" aria-label="Navegación principal">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="privacy.html">Privacidad</a></li>
-                <li><a href="terms.html">Términos</a></li>
-                <li><a href="support.html">Soporte</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./privacy.html">Privacidad</a></li>
+                <li><a href="./terms.html">Términos</a></li>
+                <li><a href="./support.html">Soporte</a></li>
             </ul>
         </nav>
 
-        <button class="theme-toggle" type="button" aria-label="Cambiar tema">
-            <span class="toggle-track"><span class="toggle-thumb"></span></span>
-        </button>
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Cambiar tema">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            </button>
+        </div>
     </header>
 
     <main class="container main-content">
@@ -59,9 +63,11 @@
     </main>
 
     <footer class="site-footer">
-        <p>Versión actual: 1.0.0</p>
-        <p>Creado por: dams.studio</p>
-        <p>&copy; 2026. Todos los derechos reservados.</p>
+        <div class="footer-meta">
+            <p>Versión actual: 1.0.2 QA versioj</p>
+            <p>Creado por: dams.studio</p>
+            <p>© 2026. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script>
@@ -69,12 +75,14 @@
         const body = document.body;
         const storedTheme = localStorage.getItem('theme');
 
-        if (storedTheme === 'dark') {
-            body.classList.add('dark-mode');
+        if (storedTheme === 'light') {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
         }
 
         toggleButton.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
             const isDark = body.classList.contains('dark-mode');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
         });
